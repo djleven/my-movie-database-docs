@@ -1,0 +1,36 @@
+toc:
+  - title: Home
+    url: /
+  - title: Getting Started
+    subitems:
+      - page: Installation
+        url: /installation/
+      - page: How to use the plugin
+        url: /how-to-use-the-mmdb-plugin/
+      - page: Plugin configuration options
+        url: /plugin-configuration-mmdb-options-page/
+  - title: Demos
+    subitems:
+      - page: Shortcodes
+        submenu:
+          - page: Default settings
+            url: /shortcode-default-parameters/
+          - page: Width setting
+            url: /width-setting/
+      - page: Posts
+        submenu:
+          - page: Movie &#8211; before content
+            url: /movie/movie-post/
+          - page: TvShow &#8211; after content
+            url: /tvshow/tvshow-post/
+          - page: Person post
+            url: /person/person-post/
+      - page: General
+        submenu:
+          - page: Width setting
+            url: /width-setting/
+
+  - title: Download
+    url: "https://wordpress.org/plugins/my-movie-database"
+  - title: Support
+    url: "https://wordpress.org/support/plugin/my-movie-database"

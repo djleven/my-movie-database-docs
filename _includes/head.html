@@ -1,0 +1,11 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href='{{site.baseurl}}/style.css' type='text/css' media='all' />
+    <script type='text/javascript' src='{{site.baseurl}}/assets/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='{{site.baseurl}}/assets/js/bootstrap.js'></script>
+</head>

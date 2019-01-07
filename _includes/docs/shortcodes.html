@@ -1,0 +1,275 @@
+
+<div id="accordion1" class="panel-group config">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion1"> Primary shortcode parameters: </a>
+            </h4>
+        </div>
+
+        <div id="collapseTwo" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div id="accordion2b" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_b_Four" data-toggle="collapse" data-parent="#accordion2b"> 1-) Ressource Id (id) </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_b_Four" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    The most important parameter is the id of the movie, tvshow or person info you wish to display. This parameter corresponds to the unique id of the resource at the <a href="https://www.themoviedb.org">TMDb website </a>.
+                                </p>
+
+                                <p>
+                                    You can find the id by searching for the movie, tvshow or person at the TMDb website or in the respective custom post type edit screen in your wordpress backend.
+                                </p>
+
+                                <p>
+                                    a-) Searching at the TMDb website b-) Searching at your custom post type edit screen
+                                </p>
+
+                                <p>
+                                    Once you find the desired id you use it as in the following example: [my_mοvie_db id=yοur_id]
+                                </p>
+
+                                <p>
+                                    If you don't specify an id the id of 655 will be used.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_b_Five" data-toggle="collapse" data-parent="#accordion2b"> 2-) Ressource Type (type) </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_b_Five" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    This other important parameter corresponds to the type of resource you are looking for. Possible acceptable values for "type" are:
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <strong>movie </strong>
+                                    </li>
+                                    <li>
+                                        <strong>tvshow </strong>
+                                    </li>
+                                    <li>
+                                        <strong>person </strong>
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    So for example if you are looking to display a tvshow your shortcode should look like this:
+                                </p>
+
+                                <p>
+                                    [my-mοvie-db id=yοur_id type=tvshow]
+                                </p>
+
+                                <p>
+                                    The default type value is "movie" so if you don't specify the type, the movie type will be used.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inner accordion ends here -->
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion1"> Optional parameters for overriding the global mmdb settings: </a>
+            </h4>
+        </div>
+
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div id="accordion2a" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_a_Four" data-toggle="collapse" data-parent="#accordion2a"> Overriding the template to use </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_a_Four" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        The template file parameter should be the name of the file without the ".php" (the extension).
+                                    </li>
+                                    <li>
+                                        Current templates available are <strong>tabs </strong> and <strong>accordion. </strong>
+                                    </li>
+                                </ul>
+
+                                <p>
+                                <blockquote>
+                                    <strong>The template files are located inside the "mmdb_templates" folder of the 'my_movie_database" plugin. </strong>
+                                </blockquote>
+                                </p>
+
+                                <p>
+                                    So if for example you want to use the accordion.php template file your shortcode will look like this:
+                                </p>
+
+                                <p>
+                                    [my-mοvie-db id=your_id type=yοur_type template=accordion]
+                                </p>
+
+                                <p>
+                                    This will use the file in the folder path /mmdb_templates/yourtype/accordion.php ("your_type" can be movie, tvshow or person).
+                                </p>
+
+                                <p>
+                                    If you want to make/use your own template:
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Use the custom.php file that is found in the same folder (recommended). The custom template is empty by default..
+                                    </li>
+                                    <li>
+                                        Or create a new file. Make sure you place it in the correct subfolder.
+                                    </li>
+                                </ul>
+
+                                <p>
+                                <blockquote>
+                                    <strong>If you want to edit the default templates or use the custom template, please copy the "mmdb_templates" folder inside your active theme folder. This way any changes you make to your template files will not be overwritten by a plugin update. </strong>
+                                </blockquote>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_a_Five" data-toggle="collapse" data-parent="#accordion2a"> Overriding the screen width </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_a_Five" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Depending on the width setup/style of your target page, you can select from a predetermined set of width combinations for a best fit. This setting only affects bootstrap multiple column arrangements (for now) as seen on sections like cast and crew.
+                                </p>
+
+                                <p>
+                                    For example, if you have a full-width area with a no sidebar layout you would choose ' <strong>large </strong>', ' <strong>medium </strong>' if you have one sidebar and ' <strong>small </strong>' for a two sidebar area.
+                                </p>
+
+                                <p>
+                                    So if for example you want to use the large size option, your shortcode will look like this:
+                                </p>
+
+                                <p>
+                                    [my-mοvie-db id=your_id type=yοur_type size=large]
+                                </p>
+
+                                <p>
+                                    The width options and the bootstrap classes rendered for multiple column arrangements:
+                                </p>
+
+                                <p>
+                                    <strong>large </strong> => for Full-width => renders 'col-lg-3 col-md-3 col-sm-6' <br /> <strong>medium </strong> => for one sidebar =>renders 'col-lg-3 col-md-4 col-sm-6' <br /> <strong>small </strong> => ‘for two sidebars =>renders 'col-lg-4 col-md-6 col-sm-6' <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_a_Two" data-toggle="collapse" data-parent="#accordion2a"> Overriding the header background color </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_a_Two" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    The background color for the template 'header' area
+                                </p>
+
+                                <p>
+                                    The template 'header' area will affect your tabs or accordion headers. In the case of tabs, the selected and the hovered tabs will get this color as well.
+                                </p>
+
+                                <p>
+                                    This setting in combination with the 'Background color for the template body' gives 2 color schemes to your tabs and accordion templates.
+                                </p>
+
+                                <p>
+                                    So if you want to use #333333 as a header background color, your shortcode will look like this:
+                                </p>
+
+                                <p>
+                                    [my-mοvie-db id=your_id type=yοur_type size=large header=#333333]
+                                </p>
+
+                                <p>
+                                    Make sure you use a valid css color, otherwise it will obviously not have any effect.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_a_Three" data-toggle="collapse" data-parent="#accordion2a"> Overriding the body background color </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseInner_a_Three" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    The background color for the template 'body' area
+                                </p>
+
+                                <p>
+                                    So if you want to use #333333 as a body background color, your shortcode will look like this:
+                                </p>
+
+                                <p>
+                                    [my-mοvie-db id=your_id type=yοur_type size=large body=#333333]
+                                </p>
+
+                                <p>
+                                    Make sure you use a valid css color, otherwise it will obviously not have any effect.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5>
+    Configuration and customization of display
+</h5>
+
+<p>
+    From the plugin options page you can select which sections to display/hide.
+</p>
+
+<p>
+    See the<a href="{{site.baseurl}}/plugin-configuration-mmdb-options-page/"> configuration documentation page</a>  for more detailed info.
+</p>

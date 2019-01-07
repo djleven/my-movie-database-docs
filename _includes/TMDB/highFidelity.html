@@ -1,0 +1,111 @@
+<style>#mmdb-content_243_movie .mmdb-header{background-color:#265a88;}#mmdb-content_243_movie .nav-tabs > li.active > a,#mmdb-content_243_movie .nav-tabs > li > a:hover{background-color:#265a88;border:#265a88 1px solid;border-color:#265a88;}#mmdb-content_243_movie .mmdb-body{background-color:#122a40;}</style><div id="mmdb-content_243_movie">
+    <div class="mmdbTabs">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#243_movie_mv_3" id="overview_tab_243_movie_mv" data-toggle="tab">Overview</a>
+            </li>
+            <li><a href="#243_movie_mv_1" id="cast_tab_243_movie_mv" data-toggle="tab">Cast</a>
+            </li>
+            <li><a href="#243_movie_mv_2" id="crew_tab_243_movie_mv" data-toggle="tab">Crew</a>
+            </li>
+            <li><a href="#243_movie_mv_4" id="trailer_tab_243_movie_mv" data-toggle="tab">Trailer</a>
+            </li>
+        </ul>
+        <div class="tab-content mmdb-header collapse in" id="tab-content_243_movie_mv" aria-expanded="true">
+            <div class="tab-pane active" id="243_movie_mv_3">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">Summary</h3>
+                </div>
+                <div class="col-md-12 mmdb-body overview">
+                    <h1 class="mmdb-entry-title">
+                        High Fidelity (2000)    </h1>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="mmdb-poster" src="{{site.baseurl}}/wp-content/tmdb_img/sEZKCUFU6Ozf7hZ3UuaKWUqHLTZ.jpg"/>
+                    </div><!-- .wrap <h2 class="widget-title">Metadata</h2>	-->
+                    <div class="outer-meta col-lg-6 col-md-6 col-sm-6">
+                        <div class="mmdb-meta">
+                            <div><strong>Release Date: </strong>
+                                March 17, 2000            </div>
+                            <div><strong>Starring: </strong>
+                                John Cusack, Iben Hjejle, Todd Louiso, Jack Black            </div>
+                            <div><strong>Genres: </strong>
+                                Comedy, Drama, Romance, Music            </div>
+                            <div><strong>Runtime: </strong>
+                                113 min
+                            </div>
+                            <div><strong>Original Title: </strong>
+                                High Fidelity            </div>
+                            <div><strong>Original Film Language: </strong>
+                                English            </div>
+                            <div><strong>Production Companies: </strong>
+                                Buena Vista, Touchstone Pictures            </div>
+                        </div><!-- .mmdbmeta -->
+                    </div><!-- .col7 -->
+                    <div class="col-md-12" style="text-align:left;">
+                        When record store owner Rob Gordon gets dumped by his girlfriend, Laura, because he hasn&#039;t changed since they met, he revisits his top five breakups of all time in an attempt to figure out what went wrong. As Rob seeks out his former lovers to find out why they left, he keeps up his efforts to win Laura back.        </div>
+                </div><!-- .md12 -->
+            </div><!-- .tab-pane -->
+            <!-- .tab-pane -->
+            {% for tab in site.data.highFidelity.tabs %}
+            <div class="tab-pane" id="243_movie_mv_{{forloop.index}}">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        {{tab.type}} <span class="pull-right"> {{site.data.highFidelity.title}}</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body {{tab.type}}">
+                    {% for item in tab.list %}
+                    <div class="col-lg-3 col-md-3 col-sm-6 credits">
+                        <img class="img-circle" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}" />
+                        <ul class="people">
+                            <li>
+                                {{item.name}}
+                            </li>
+                            <li>
+                                {% if tab.type == "Cast" %}Role:&nbsp;{% endif %}{{item.role}}
+                            </li>
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- .mmdb-body -->
+            </div>
+            {% endfor %}
+            <div class="tab-pane" id="243_movie_mv_4">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        Trailer        <span class="pull-right">High Fidelity</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body" id="trailer">
+                    <p>
+                        <img class="text-center"
+                             src="https://img.youtube.com/vi/yUTsDJ3dxEQ/hqdefault.jpg"/>
+                    </p>
+                    <p>
+                        <a href="#myModal" class="btn btn-lg btn-primary text-center" data-toggle="modal">
+                            Launch&nbsp;Trailer        </a>
+                    </p>
+                </div>
+                <!-- Modal HTML -->
+            </div>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="mmdb modal-title pull-left">High Fidelity Trailer</h4>
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="trailer-video">
+                                <iframe id="trailerVideo" width="560" height="315" frameborder="0"
+                                        src="https://www.youtube-nocookie.com/embed/yUTsDJ3dxEQ" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>&nbsp;</p>

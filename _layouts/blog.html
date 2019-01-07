@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US" class="js svg background-fixed">
+{% include head.html %}
+
+<body class="has-header-image colors-dark">
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    {% include header.html %}
+
+    <div class="site-content-contain">
+        <div id="content" class="site-content">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main" role="main">
+                    {{ content }}
+                </main><!-- #main -->
+            </div><!-- #primary -->
+        </div><!-- #content -->
+        {% include footer.html %}
+
+    </div><!-- .site-content-contain -->
+</div><!-- #page -->
+{% include footer_js.html %}
+{% include svg.html %}
+{% include services/analytics.html %}
+</body>
+</html>

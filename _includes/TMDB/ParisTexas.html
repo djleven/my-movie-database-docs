@@ -1,0 +1,141 @@
+<style>#mmdb-content_655_movie .mmdb-header{background-color:#265a88;}#mmdb-content_655_movie .nav-tabs > li.active > a,#mmdb-content_655_movie .nav-tabs > li > a:hover{background-color:#265a88;border:#265a88 1px solid;border-color:#265a88;}#mmdb-content_655_movie .mmdb-body{background-color:#122a40;}</style>
+<div id="mmdb-content_655_movie">
+    <div class="mmdbTabs">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#655_movie_mv_0" id="overview_tab_655_movie_mv" data-toggle="tab">Overview</a>
+            </li>
+            <li>
+                <a href="#655_movie_mv_1" id="cast_tab_655_movie_mv" data-toggle="tab">Cast</a>
+            </li>
+            <li>
+                <a href="#655_movie_mv_2" id="crew_tab_655_movie_mv" data-toggle="tab">Crew</a>
+            </li>
+            <li>
+                <a href="#655_movie_mv_4" id="trailer_tab_655_movie_mv" data-toggle="tab">Trailer</a>
+            </li>
+        </ul>
+        <div class="tab-content mmdb-header collapse in" id="tab-content_655_movie_mv" aria-expanded="true">
+            <div class="tab-pane active" id="655_movie_mv_0">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        Summary
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body overview">
+                    <h1 class="mmdb-entry-title">
+                        Paris, Texas (1984)
+                    </h1>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="mmdb-poster" src="https://image.tmdb.org/t/p/w300/t1fXt8WLqaWmHhIOUlbaK1EQnNU.jpg" />
+                    </div>
+
+                    <!-- .wrap <h2 class="widget-title">Metadata</h2>	-->
+                    <div class="outer-meta col-lg-6 col-md-6 col-sm-6">
+                        <div class="mmdb-meta">
+                            <div>
+                                <strong>Release Date: </strong> May 19, 1984
+                            </div>
+
+                            <div>
+                                <strong>Starring: </strong> Harry Dean Stanton, Nastassja Kinski, Dean Stockwell, Hunter Carson
+                            </div>
+
+                            <div>
+                                <strong>Genres: </strong> Drama
+                            </div>
+
+                            <div>
+                                <strong>Runtime: </strong> 145 min
+                            </div>
+
+                            <div>
+                                <strong>Original Title: </strong> Paris, Texas
+                            </div>
+
+                            <div>
+                                <strong>Original Film Language: </strong> English
+                            </div>
+                            <div>
+                                <strong>Production Companies: </strong> Channel Four Films, Pro-ject Filmproduktion, Argos Films, Westdeutscher Rundfunk (WDR), Road Movies Filmproduktion, Wim Wenders Stiftung
+                            </div>
+                        </div>
+                        <!-- .mmdbmeta -->
+                    </div>
+                    <!-- .col7 -->
+                    <div class="col-md-12" style="text-align:left;">
+                        A man wanders out of the desert not knowing who he is. His brother finds him, and helps to pull his memory back of the life he led before he walked out on his family and disappeared four years earlier.
+                    </div>
+                </div>
+                <!-- .md12 -->
+            </div>
+            <!-- .tab-pane -->
+            {% for tab in site.data.parisTexas.tabs %}
+            <div class="tab-pane" id="655_movie_mv_{{forloop.index}}">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        {{tab.type}} <span class="pull-right"> {{site.data.parisTexas.title}}</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body {{tab.type}}">
+                    {% for item in tab.list %}
+                    <div class="col-lg-3 col-md-3 col-sm-6 credits">
+                        <img class="img-circle" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}" />
+                        <ul class="people">
+                            <li>
+                                {{item.name}}
+                            </li>
+                            <li>
+                                {% if tab.type == "Cast" %}Role:&nbsp;{% endif %}{{item.role}}
+                            </li>
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- .mmdb-body -->
+            </div>
+            {% endfor %}
+            <div class="tab-pane" id="655_movie_mv_4">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        Trailer <span class="pull-right">Paris, Texas</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body" id="trailer">
+                    <p>
+                        <img class="text-center"
+                             src="https://img.youtube.com/vi/9e590FeeGCM/hqdefault.jpg" />
+                    </p>
+                    <p>
+                        <a href="#myModal" class="btn btn-lg btn-primary text-center" data-toggle="modal"> Launch&nbsp;Trailer </a>
+                    </p>
+                </div>
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="mmdb modal-title pull-left">
+                                    Paris, Texas Trailer
+                                </h4>
+
+                                <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div id="trailer-video">
+                                    <iframe id="trailerVideo" width="560" height="315" frameborder="0"
+                                            src="https://www.youtube-nocookie.com/embed/9e590FeeGCM" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+</div>

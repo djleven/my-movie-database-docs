@@ -1,0 +1,99 @@
+<div style="clear:both;"></div>
+<div id="mmdb-content_655_tvshow">
+    <div class="panel-group" id="655_tvshow_tv">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#655_tvshow_tv" href="#655_tvshow_tv_One">Overview</a>
+                </h4>
+            </div>
+            <div id="655_tvshow_tv_One" class="panel-collapse collapse in">
+                <div class="panel-body mmdb-body">
+                    <div class="mmdb-header">
+                        <h3 class="mmdb-header-title">Summary</h3>
+                    </div>
+                    <div class="col-md-12 mmdb-body overview">
+                        <h1 class="entry-title">
+                            Star Trek: The Next Generation (1987)    </h1>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img class="mmdb-poster" src="https://image.tmdb.org/t/p/w300/8ZfPKg1xTahEigpDA53bRmmLdvs.jpg"/>
+                        </div>
+                        <div class="outer-meta col-lg-6 col-md-6 col-sm-6">
+                            <div class="mmdb-meta">
+                                <div><strong>Genres: </strong>
+                                    Action &amp; Adventure, Drama, Mystery, Sci-Fi &amp; Fantasy            </div>
+                                <div><strong>Created by: </strong>
+                                    Gene Roddenberry            </div>
+                                <div><strong>Starring: </strong>
+                                    Patrick Stewart, Jonathan Frakes, Brent Spiner, Michael Dorn                </div>
+                                <div><strong>Episodes / Seasons: </strong>
+                                    178 / 7            </div>
+                                <div><strong>First aired: </strong>
+                                    September 28, 1987                </div>
+                                <div><strong>Last air date: </strong>
+                                    May 23, 1994                </div>
+                                <div>
+                                    <a target="_blank" href="http://www.startrek.com/page/star-trek-the-next-generation">
+                                        <strong>Website</strong>
+                                    </a>
+                                </div>
+                                <div><strong>Runtime: </strong>
+                                    45 min
+                                </div>
+                            </div><!-- .mmdb-meta -->
+                        </div><!-- .col -->
+                        <div class="col-md-12"  id="overview-text">
+                            Follow the intergalactic adventures of Capt. Jean-Luc Picard and his loyal crew aboard the all-new USS Enterprise NCC-1701D, as they explore new worlds.        </div>
+                        <div class="col-md-12">
+                            <div><strong>Networks: </strong>
+                                Broadcast Syndication        </div>
+                            <div><strong>Production Companies: </strong>
+                                Broadcast Syndication        </div>
+                        </div>
+                    </div><!-- .md12 mmdb-body-->
+                </div>
+            </div>
+        </div>
+        {% for tab in site.data.starTrek.tabs %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#655_tvshow_tv" href="#655_tvshow_tv_{{forloop.index}}">View&nbsp;{{tab.type}}</a>
+                </h4>
+            </div>
+            <div id="655_tvshow_tv_{{forloop.index}}" class="panel-collapse collapse">
+                <div class="panel-body mmdb-body">
+                    <div class="mmdb-header">
+                        <h3 class="mmdb-header-title">
+                            {{tab.type}}
+                            <span class="pull-right"> {{site.data.starTrek.title}}</span>
+                        </h3>
+                    </div>
+                    <div class="col-md-12 mmdb-body {{tab.type}}">
+                        {% for item in tab.list %}
+                        {% if tab.type == "Cast" or tab.type == "Crew" %}
+                        <div class="col-lg-3 col-md-3 col-sm-6 credits">
+                            <img class="img-circle" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                            <ul class="people">
+                                <li>{{item.name}}</li>
+                                <li>{% if tab.type == "Cast" %}Role:&nbsp;{% endif %}{{item.role}}</li>
+                            </ul>
+                        </div>
+                        {% else %}
+                        <div class="col-lg-6 col-md-6 col-sm-6 credits">
+                            <ul class="seasons">
+                                <li>Season&nbsp;{{item.name}}</li>
+                                <li>Air date:&nbsp;{{item.airdate}}</li>
+                                <li>Episodes:&nbsp;{{item.episodes}}</li>
+                            </ul>
+                            <img class="mmdb-poster" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div><!-- .mmdb-body -->
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

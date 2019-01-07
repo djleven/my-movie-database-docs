@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+
+<article class="page text-center">
+
+    <div class="entry wrap">
+        <h2 class="entry-title">{% if page.title %}{{ page.title }} {% endif %}</h2>
+        <div class ="entry-content">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include services/disqus.html %}
+</article>

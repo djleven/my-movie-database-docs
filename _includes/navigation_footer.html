@@ -1,0 +1,39 @@
+<nav class="navigation post-navigation wrap" role="navigation">
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+        {% if page.previous.url %}
+        <div class="nav-previous">
+            <a href="{{site.baseurl}}{{page.previous.url}}" rel="prev">
+                <span class="screen-reader-text">Previous Post</span><span aria-hidden="true" class="nav-subtitle">
+                    Previous Post
+                </span>
+                <span class="nav-title"><span class="nav-title-icon-wrapper">
+                    <svg class="icon icon-arrow-left" aria-hidden="true" role="img">
+                        <use href="#icon-arrow-left" xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                </span>{{page.previous.title}}</span>
+            </a>
+        </div>
+        {% endif %}
+        {% if page.next.url %}
+        <div class="nav-next">
+            <a href="{{site.baseurl}}{{page.next.url}}" rel="next">
+                <span class="screen-reader-text">
+                    Next Post
+                </span>
+                <span aria-hidden="true" class="nav-subtitle">
+                    Next
+                </span>
+                <span class="nav-title">
+                    {{page.next.title}}
+                    <span class="nav-title-icon-wrapper">
+                        <svg class="icon icon-arrow-right" aria-hidden="true" role="img">
+                            <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </span>
+                </span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</nav>

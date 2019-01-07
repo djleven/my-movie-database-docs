@@ -1,0 +1,95 @@
+<style>#mmdb-content_1668_tvshow .mmdb-header{background-color:#265a88;}#mmdb-content_1668_tvshow .panel,#mmdb-content_1668_tvshow .panel-default > .panel-heading{background-color:#265a88;}#mmdb-content_1668_tvshow .mmdb-body{background-color:#122a40;}</style><div id="mmdb-content_1668_tvshow">
+<div class="panel-group" id="1668_tvshow_tv">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#1668_tvshow_tv" href="#1668_tvshow_tv_One">Overview</a>
+            </h4>
+        </div>
+        <div id="1668_tvshow_tv_One" class="panel-collapse collapse in">
+            <div class="panel-body mmdb-body">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">Summary</h3>
+                </div>
+                <div class="col-md-12 mmdb-body overview">
+                    <h1 class="entry-title">
+                        Friends (1994)    </h1>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="mmdb-poster" src="https://image.tmdb.org/t/p/w300/7buCWBTpiPrCF5Lt023dSC60rgS.jpg"/>
+                    </div>
+                    <div class="outer-meta col-lg-6 col-md-6 col-sm-6">
+
+                        <div class="mmdb-meta">
+                            <div><strong>Genres: </strong>
+                                Comedy            </div>
+                            <div><strong>Created by: </strong>
+                                Marta Kauffman, David Crane            </div>
+                            <div><strong>Starring: </strong>
+                                Matthew Perry, Matt LeBlanc, Courteney Cox, David Schwimmer                </div>
+                            <div><strong>Episodes / Seasons: </strong>
+                                236 / 10            </div>
+                            <div><strong>First aired: </strong>
+                                September 22, 1994                </div>
+                            <div><strong>Last air date: </strong>
+                                May 6, 2004                </div>
+                            <div><strong>Runtime: </strong>
+                                22 min
+                            </div>
+                        </div><!-- .mmdb-meta -->
+
+                    </div><!-- .col -->
+                    <div class="col-md-12"  id="overview-text">
+                        The misadventures of a group of friends as they navigate the pitfalls of work, life and love in Manhattan.        </div>
+                    <div class="col-md-12">
+                        <div><strong>Networks: </strong>
+                            NBC        </div>
+                        <div><strong>Production Companies: </strong>
+                            NBC        </div>
+                    </div>
+
+                </div><!-- .md12 mmdb-body-->
+            </div>
+        </div>
+    </div>
+    {% for tab in site.data.friends.tabs %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#1668_tvshow_tv_" href="#1668_tvshow_tv_{{forloop.index}}">View&nbsp;{{tab.type}}</a>
+            </h4>
+        </div>
+        <div id="1668_tvshow_tv_{{forloop.index}}" class="panel-collapse collapse">
+            <div class="panel-body mmdb-body">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        {{tab.type}}
+                        <span class="pull-right"> {{site.data.friends.title}}</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body {{tab.type}}">
+                    {% for item in tab.list %}
+                    {% if tab.type == "Cast" or tab.type == "Crew" %}
+                    <div class="col-lg-3 col-md-3 col-sm-6 credits">
+                        <img class="img-circle" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                        <ul class="people">
+                            <li>{{item.name}}</li>
+                            <li>{{item.role}}</li>
+                        </ul>
+                    </div>
+                    {% else %}
+                    <div class="col-lg-6 col-md-6 col-sm-6 credits">
+                        <ul class="seasons">
+                            <li>Season&nbsp;{{item.name}}</li>
+                            <li>Air date:&nbsp;{{item.airdate}}</li>
+                            <li>Episodes:&nbsp;{{item.episodes}}</li>
+                        </ul>
+                        <img class="mmdb-poster" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div><!-- .mmdb-body -->
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

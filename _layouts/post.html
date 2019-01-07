@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+
+<article class="post">
+
+    <div class="entry wrap">
+        <h2 class="entry-title">{% if page.title %}{{ page.title }} {% endif %}</h2>
+        <div class ="entry-content">
+            {{ content }}
+            {% include navigation_footer.html %}
+        </div>
+    </div>
+
+</article>

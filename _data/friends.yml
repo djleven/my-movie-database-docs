@@ -1,0 +1,209 @@
+title: "Friends"
+tabs:
+  - type: Cast
+    list:
+      - url: oSKEEDXDNnwWdQ68qfDVD6Q7Pxp.jpg
+        name: Matthew Perry
+        role: Chandler Bing
+      - url: 35sPf8IBVl54vdmc9Tyv17otMnk.jpg
+        name: Matt LeBlanc
+        role: Joey Tribbiani
+      - url: a2NJbLwimILFYOVArpUuwS1pBAY.jpg
+        name: Courteney Cox
+        role: Monica Geller
+      - url: aOW62VZJMGXjiPvwP43xCHS9X4r.jpg
+        name: David Schwimmer
+        role: Ross Geller
+      - url: uH9FwXtRpiboKeqHUk0RuJRAm6I.jpg
+        name: Jennifer Aniston
+        role: Rachel Green
+      - url: 9c7WB5dqsA3zpZvh6CKRQ6xupjw.jpg
+        name: Lisa Kudrow
+        role: Phoebe Buffay
+
+  - type: Crew
+    list:
+      - url: cinema.png
+        name: Wendy Knoller
+        role: Producer
+      - url: cinema.png
+        name: Todd Stevens
+        role: Producer
+      - url: cinema.png
+        name: Nicholas Caprio
+        role: Producer
+      - url: cinema.png
+        name: Robert Zimmerman
+        role: Producer
+      - url: cinema.png
+        name: Wil Calhoun
+        role: Producer
+      - url: cinema.png
+        name: Ted Cohen
+        role: Producer
+      - url: yVMy3sw4wYfqJIlnqQFzxPKEKAs.jpg
+        name: Sherry Bilsing
+        role: Producer
+      - url: cinema.png
+        name: Shana Goldberg-Meehan
+        role: Producer
+      - url: cinema.png
+        name: Seth Kurland
+        role: Producer
+      - url: tFpxJSZKs8Cvym4QdUBbVH4nMmw.jpg
+        name: Scott Silveri
+        role: Producer
+      - url: cinema.png
+        name: Michael Curtis
+        role: Producer
+      - url: muXoOXOxyFlCsCXdda25voeoc3d.jpg
+        name: Marta Kauffman
+        role: Executive Producer
+      - url: cinema.png
+        name: Mark Kunerth
+        role: Producer
+      - url: 7RxqXiWJUvYsXci3MsQ50xDa29o.jpg
+        name: Kevin S. Bright
+        role: Executive Producer
+      - url: cinema.png
+        name: Greg Malins
+        role: Executive Producer
+      - url: cinema.png
+        name: David Crane
+        role: Executive Producer
+      - url: cinema.png
+        name: Dana Klein
+        role: Producer
+      - url: a7ddCUFEUUhmoEl2Zi6IEXwQjJY.jpg
+        name: Adam Chase
+        role: Producer
+      - url: cinema.png
+        name: Michael Borkow
+        role: Producer
+      - url: cinema.png
+        name: Betsy Borns
+        role: Producer
+      - url: cinema.png
+        name: Alexa Junge
+        role: Producer
+      - url: cinema.png
+        name: Ira Ungerleider
+        role: Producer
+      - url: cinema.png
+        name: Ellen Plummer
+        role: Producer
+      - url: cinema.png
+        name: Mary Rodriquez
+        role: Producer
+      - url: cinema.png
+        name: Brian Buckner
+        role: Producer
+      - url: cinema.png
+        name: Sebastian Jones
+        role: Producer
+      - url: cinema.png
+        name: Noel Bright
+        role: Producer
+      - url: cinema.png
+        name: Jamie O&#039;Connor
+        role: Producer
+      - url: cinema.png
+        name: Robert Carlock
+        role: Producer
+      - url: cinema.png
+        name: Richard Choi
+        role: Producer
+      - url: cinema.png
+        name: David Helfand
+        role: Producer
+      - url: cinema.png
+        name: Gigi McCreery
+        role: Producer
+      - url: cinema.png
+        name: Perry Rein
+        role: Producer
+      - url: cinema.png
+        name: Andy Zall
+        role: Producer
+      - url: cinema.png
+        name: Jill Condon
+        role: Producer
+      - url: cinema.png
+        name: Amy Toomin
+        role: Producer
+      - url: u3qZpho6PSdwwfIYj8GmKwy4wYi.jpg
+        name: Jeff Greenstein
+        role: Producer
+      - url: cinema.png
+        name: Jeff Strauss
+        role: Producer
+      - url: cinema.png
+        name: Mary Rodriguez
+        role: Producer
+      - url: cinema.png
+        name: Andrew Reich
+        role: Producer
+      - url: cinema.png
+        name: Richard Allen
+        role: Producer
+      - url: cinema.png
+        name: Greg J. Grande
+        role: Set Decoration
+      - url: 2wH44GuUhNUORaANbwOjJNmkC3r.jpg
+        name: Debra McGuire
+        role: Costume Design
+      - url: cinema.png
+        name: John Bickelhaupt
+        role: Sound Re-Recording Mixer
+      - url: cinema.png
+        name: Charlie McDaniel
+        role: Sound Re-Recording Mixer
+      - url: cinema.png
+        name: James Fredburg
+        role: Special Effects Supervisor
+      - url: cinema.png
+        name: Kevin McGill
+        role: First Assistant Camera
+
+  - type: Seasons
+    list:
+      - name: 1
+        airdate: September 22, 1994
+        episodes: 24
+        url: nvyx1LNbdQbq9xzU9LIuBcNAr2v.jpg
+      - name: 2
+        airdate: September 21, 1995
+        episodes: 24
+        url: 4pKU6MfTjfNZS4RIby4Q3ukguLo.jpg
+      - name: 3
+        airdate: September 16, 1996
+        episodes: 25
+        url: mHmIOieHNRDWlvtuLqU2jSkWViZ.jpg
+      - name: 4
+        airdate: September 25, 1997
+        episodes: 24
+        url: kXcjUuAjEHGbV1ZJ0fu267dxJ5I.jpg
+      - name: 5
+        airdate: September 24, 1998
+        episodes: 24
+        url: kiz7JXtVmt6a1hnzXAST74jOMB4.jpg
+      - name: 6
+        airdate: September 23, 1999
+        episodes: 25
+        url: 4phhQajxpTEStsoKlKW9wrwWFTv.jpg
+      - name: 7
+        airdate: October 12, 2000
+        episodes: 24
+        url: o7JaYswXab8RNidPk2OXdZzIoc7.jpg
+      - name: 8
+        airdate: September 27, 2001
+        episodes: 24
+        url: v6uNAPavJva8gPqIMd4FUmfRa5G.jpg
+      - name: 8
+        airdate: September 23, 2002
+        episodes: 24
+        url: 6OPCnXw5bSQH7B8quLpbYfqNPT3.jpg
+      - name: 10
+        airdate: September 25, 2003
+        episodes: 18
+        url: cgUOlNYyXGjzrSIVoTMuJgFiYSq.jpg

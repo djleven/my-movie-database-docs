@@ -1,0 +1,196 @@
+
+<img class="aligncenter wp-image-103 size-full" src="{{site.baseurl}}/wp-content/uploads/2017/09/mmdb_options.png" alt="" width="1206" height="797" srcset="{{site.baseurl}}/wp-content/uploads/2017/09/mmdb_options.png 1206w, {{site.baseurl}}/wp-content/uploads/2017/09/mmdb_options-300x198.png 300w, {{site.baseurl}}/wp-content/uploads/2017/09/mmdb_options-768x508.png 768w, {{site.baseurl}}/wp-content/uploads/2017/09/mmdb_options-1024x677.png 1024w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" />
+
+<div id="accordion1" class="panel-group config">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion1"> Option that applies to wordpress post types only: </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div id="accordion2a" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapseInner_a_Three" data-toggle="collapse" data-parent="#accordion2a"> Choosing the display position </a>
+                            </h4>
+                        </div>
+                        <div id="collapseInner_a_Three" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Choose to display the my movie database view to appear before or after the content area of your post.
+                                </p>
+                                <ul>
+                                    <li>
+                                        after => 'After content'
+                                    </li>
+                                    <li>
+                                        before => 'Before content'
+                                    </li>
+                                </ul>
+                                <p>
+                                    The default value is 'after'.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion1"> Options that apply to wordpress post types and shortcodes: </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div id="accordion2b" class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapseInner_b_Four" data-toggle="collapse" data-parent="#accordion2b"> Choosing the template to use </a>
+                                </h4>
+                            </div>
+                            <div id="collapseInner_b_Four" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    Current templates available with the plugin are the <strong>tabs </strong> and the <strong>accordion </strong>.
+                                </p>
+                                <p>
+                                    The template file options are :
+                                </p>
+                                <ul>
+                                    <li>
+                                        tabs => 'With tabs'
+                                    </li>
+                                    <li>
+                                        accordion => 'With accordion'
+                                    </li>
+                                    <li>
+                                        custom => 'Custom template'
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        The template files are located inside the "mmdb_templates" folder of the 'my_movie_database" plugin.
+                                    </li>
+                                </ul>
+                                <p>
+                                    The default value is 'With tabs' which uses the "tabs.php" file located inside the "mmdb_templates" folder of the 'my_movie_database" plugin.
+                                </p>
+                                <p>
+                                    If you want to make your own template use the custom.php file that is found in the same folder and select 'Custom template'. The custom template is empty by default
+                                </p>
+                                <blockquote>
+                                    <strong>If you want to edit the default templates or use the custom template, please copy the "mmdb_templates" folder inside your active theme folder. This way any changes you make to your template files will not be overwritten by a plugin update. </strong>
+                                </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapseInner_b_Five" data-toggle="collapse" data-parent="#accordion2b"> Choosing the screen width </a>
+                                </h4>
+                            </div>
+                            <div id="collapseInner_b_Five" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Depending on the width setup/style of your target page, you can select from a predetermined set of width combinations for a best fit. This setting only affects bootstrap multiple column arrangements (for now) as seen on sections like cast and crew.
+                                    </p>
+                                    <p>
+                                        For example, if you have a full-width area with a no sidebar layout you would choose ' <strong>large </strong>', ' <strong>medium </strong>' if you have one sidebar and ' <strong>small </strong>' for a two sidebar area. The default value is ‘medium’.
+                                    </p>
+                                    <p>
+                                        The width options and the bootstrap classes rendered for multiple column arrangements:
+                                    </p>
+                                    <p>
+                                        <strong>large </strong> => for Full-width => renders 'col-lg-3 col-md-3 col-sm-6' <br /> <strong>medium </strong> => for one sidebar =>renders 'col-lg-3 col-md-4 col-sm-6' <br /> <strong>small </strong> => ‘for two sidebars =>renders 'col-lg-4 col-md-6 col-sm-6' <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapseInner_b_One" data-toggle="collapse" data-parent="#accordion2b"> Hide sections </a>
+                                </h4>
+                            </div>
+                            <div id="collapseInner_b_One" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Select the sections to be hidden.
+                                    </p>
+                                    <p>
+                                        The option names are different for each ressource type (movie, tvshow, person) but the options always refer to either a complete tab / accordion section, or the overview text on the main (1st) section.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            The overview text found at the bottom of the first tab => 'Overview Text'
+                                        </li>
+                                        <li>
+                                            The second tab / section => <strong>' </strong>Cast' (or 'Movie Roles' for persons)
+                                        </li>
+                                        <li>
+                                            The third tab /section => 'Crew' (or 'Tv Roles / Appearances' for persons)
+                                        </li>
+                                        <li>
+                                            The fourth tab / section => 'Trailer', 'Seasons' or 'Crew Credits'
+                                        </li>
+                                    </ul>
+                                    <blockquote>
+                                        <strong> If there is no content available from TMDb for a given section, that section will be hidden by default. For example, if your movie has no trailer or your person has no crew credits than those tabs / sections will be hidden automatically regardless of this setting. </strong>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapseInner_b_Two" data-toggle="collapse" data-parent="#accordion2b"> Header Background Color </a>
+                                </h4>
+                            </div>
+                            <div id="collapseInner_b_Two" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        The background color for the template 'header' area
+                                    </p>
+                                    <p>
+                                        The template 'header' area will affect your tabs or accordion headers. In the case of tabs, the selected and the hovered tabs will get this color as well.
+                                    </p>
+                                    <p>
+                                        This setting in combination with the 'Background color for the template body' gives 2 color schemes to your tabs and accordion templates.
+                                    </p>
+                                    <p>
+                                        The default value is '#265a88'
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapseInner_b_Three" data-toggle="collapse" data-parent="#accordion2b"> Body Color </a>
+                                </h4>
+                            </div>
+                            <div id="collapseInner_b_Three" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        The background color for the template 'body' area
+                                    </p>
+                                    <p>
+                                        The default value is '#DCDCDC'
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner accordion ends here -->
+            </div>
+        </div>
+    </div>
+</div>

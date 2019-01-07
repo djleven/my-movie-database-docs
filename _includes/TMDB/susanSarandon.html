@@ -1,0 +1,92 @@
+<style>#mmdb-content_4038_person .mmdb-header{background-color:#265a88;}#mmdb-content_4038_person .nav-tabs > li.active > a,#mmdb-content_4038_person .nav-tabs > li > a:hover{background-color:#265a88;border:#265a88 1px solid;border-color:#265a88;}#mmdb-content_4038_person .mmdb-body{background-color:#122a40;}</style><div id="mmdb-content_4038_person">
+    <div class="mmdbTabs">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#4038_person_ps_0" id="overview_tab_4038_person_ps" data-toggle="tab">Overview</a>
+            </li>
+            <li><a href="#4038_person_ps_1" id="cast_tab_4038_person_ps" data-toggle="tab">Movie Roles</a>
+            </li>
+            <li><a href="#4038_person_ps_2" id="crew_tab_4038_person_ps" data-toggle="tab">Tv Roles</a>
+            </li>
+            <li><a href="#4038_person_ps_3" id="trailer_tab_4038_person_ps" data-toggle="tab">Crew Credits</a>
+            </li>
+        </ul>
+        <div class="tab-content mmdb-header collapse in" id="tab-content_4038_person_ps" aria-expanded="true">
+            <div class="tab-pane active" id="4038_person_ps_0">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">Summary</h3>
+                </div>
+                <div class="col-md-12 mmdb-body" id="overview">
+                    <h1 class="mmdb-entry-title">
+                        Susan Sarandon    </h1>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="mmdb-poster" src="https://image.tmdb.org/t/p/w300/5fPNvIYYBoqlaGr0RzXJbu5Z4QG.jpg"/>
+                    </div><!-- .wrap <h2 class="widget-title">Metadata</h2>	-->
+                    <div class="outer-meta col-lg-6 col-md-6 col-sm-6">
+                        <div class="mmdb-meta">
+                            <div><strong>Birthday: </strong>
+                                1946-10-04                </div>
+                            <div><strong>Birthplace: </strong>
+                                New York City, New York, USA                </div>
+                            <div><strong>Movie Acting Roles: </strong>
+                                133                </div>
+                            <div><strong>Tv Roles/Appearances: </strong>
+                                47                </div>
+                            <div><strong>Movie Crew Credits: </strong>
+                                11                </div>
+                            <div><strong>Tv Crew Credits: </strong>
+                                1                </div>
+                            <div>
+                                <a target="_blank" href="http://www.imdb.com/name/nm0000215"><strong>Imdb Profile</strong></a>
+                            </div>
+                        </div><!-- .mmdb-meta -->
+                    </div><!-- .col -->
+                    <div class="col-md-12" style="text-align:left;">
+                        Susan Abigail Sarandon (born October 4, 1946) is an American actress. She has worked in films and television since 1969, and won an Academy Award for Best Actress for her performance in the 1995 film Dead Man Walking. She had also been nominated for the award for four films before that and has received other recognition for her work. She is also noted for her social and political activism for a variety of liberal causes.        </div>
+                </div><!-- .md12 -->
+            </div><!-- .tab-pane -->
+            {% for tab in site.data.susanSarandon.tabs %}
+            <div class="tab-pane" id="4038_person_ps_{{forloop.index}}">
+                <div class="mmdb-header">
+                    <h3 class="mmdb-header-title">
+                        {{tab.type}}       <span class="pull-right"> {{site.data.susanSarandon.title}}</span>
+                    </h3>
+                </div>
+                <div class="col-md-12 mmdb-body">
+                    {% for item in tab.list %}
+                    {% if tab.type == "MovieRoles" %}
+                    <div class="movie-role-wrapper">
+                        <div class="col-sm-4 poster-img">
+                            <img src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}" />
+                        </div>
+                        <div class="col-sm-8 outer-180">
+                            <ul class="movie-role">
+                                <li>{{item.name}}</li>
+                                <li>{{item.date}}</li>
+                                <li><strong>{{item.role}}</strong></li>
+                                <li class="mmdb-desc">{{item.desc}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    {% else if tab.type == "TvRoles" or tab.type == "Crew Credits" %}
+                    {% if item.subtype %}
+                    <div>
+                        <h4>{{item.subtype}}</h4>
+                    </div>
+                    <p> </p>
+                    {% endif %}
+                    <div class="col-lg-6 col-md-6 col-sm-6 credits">
+                        <img src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                        <ul class="people">
+                            <li>{{item.name}}</li>
+                            <li>{{item.role}}</li>
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div><!-- .mmdb-body -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

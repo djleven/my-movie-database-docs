@@ -1,0 +1,110 @@
+title: "Star Trek: The Next Generation"
+tabs:
+  - type: Cast
+    list:
+    - name: Patrick Stewart
+      role: Jean-Luc Picard
+      url: wEy5qSDT5jT3ZASc2hbwi59voPL.jpg
+    - name: Jonathan Frakes
+      role: William T. Riker
+      url: 51Z5EbZxtVPm6GiN0Wc9CLP4z3s.jpg
+    - name: Brent Spiner
+      role: Data
+      url: gYaOWwycKcSEPQzUOITt9DA5AcY.jpg
+    - name: Michael Dorn
+      role: Worf
+      url: d89cHhByE4kpzQcUB7z51YV3EjA.jpg
+    - name: Marina Sirtis
+      role: Deanna Troi
+      url: ueHzqv6uN6Mhf1DC3IjTPhNafYq.jpg
+    - name: LeVar Burton
+      role: Geordi La Forge
+      url: C3Jj0fNoPxZXDyDapm8lHyUh7o.jpg
+    - name: Gates McFadden
+      role: Beverly Crusher
+      url: zPx8IwxNwgCZOhpGad5h0mrLV2q.jpg
+    - name: Wil Wheaton
+      role: Wesley Crusher
+      url: 1lrCjrsazL3O82DsP7ICfMHWJTU.jpg
+    - name: John de Lancie
+      role: Q
+      url: bb3j02gYvgs5ApK2l2qKCweYW5z.jpg
+    - name: Michelle Forbes
+      role: Lieutenant Ro Laren
+      url: 6xjsXKZs23a1Vzdw4uSUiV64BFS.jpg
+
+  - type: Crew
+    list:
+    - name: Jeri Taylor
+      role: Executive Producer
+      url: cinema.png
+    - name: Rick Berman
+      role: Executive Producer
+      url: mEznRUFYLmpD6jPPeZKLWkHtPdn.jpg
+    - name: Gene Roddenberry
+      role: Producer
+      url: 9WMyiCTdtBEdx1JUCavoFiDl7wd.jpg
+    - name: D.C. Fontana
+      role: Producer
+      url: cinema.png
+    - name: Ronald D. Moore
+      role: Producer
+      url: sAUeNMtclYYMa6Pp38oBRpckaZX.jpg
+    - name: Wendy Neuss
+      role: Producer
+      url: cinema.png
+    - name: Joe Menosky
+      role: Producer
+      url: cinema.png
+    - name: Robert Lewin
+      role: Producer
+      url: cinema.png
+    - name: Brannon Braga
+      role: Producer
+      url: fK2Royl7xqybSpK3OED0wI9upOp.jpg
+    - name: Peter Lauritson
+      role: Producer
+      url: cinema.png
+    - name: Robert H. Justman
+      role: Producer
+      url: cinema.png
+    - name: Michael Piller
+      role: Executive Producer
+      url: cinema.png
+    - name: David Livingston
+      role: Producer
+      url: cinema.png
+    - name: Merri D. Howard
+      role: Producer
+      url: cinema.png
+
+  - type: Seasons
+    list:
+    - name: 1
+      airdate: September 28, 1987
+      episodes: 26
+      url: t1g6GLBQj8pfAla4qA0r5TnLw0R.jpg
+    - name: 2
+      airdate: November 21, 1988
+      episodes: 22
+      url: 3recmOpquLOM31YOvVNQlR6U94H.jpg
+    - name: 3
+      airdate: September 25, 1989
+      episodes: 26
+      url: odNdFj4dblGPRfwdDo7U0599fWI.jpg
+    - name: 4
+      airdate: September 24, 1990
+      episodes: 26
+      url: x56cmiHHvKIDRBHSTUohNYxtDHS.jpg
+    - name: 5
+      airdate: September 23, 1991
+      episodes: 26
+      url: eVlZ16kGyaHMHKc6YwzvoGBmZ1e.jpg
+    - name: 6
+      airdate: September 21, 1992
+      episodes: 26
+      url: l6POnlAk5vQgmru2dxm1Yns9kYl.jpg
+    - name: 7
+      airdate: September 20, 1993
+      episodes: 26
+      url: 8l5YMZo4KwvE9dQMvrr53nXkR28.jpg
