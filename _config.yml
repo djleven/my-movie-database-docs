@@ -1,7 +1,7 @@
 name: My Movie Database
 description: Movie data plugin for WP
-url: https://djleven.github.io
-baseurl: /my-movie-database-docs
+url: https://djleven.github.io/my-movie-database-docs
+baseurl: ""
 google_analytics:
 #
 # !!
