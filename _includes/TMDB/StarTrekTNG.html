@@ -73,7 +73,7 @@
                         {% for item in tab.list %}
                         {% if tab.type == "Cast" or tab.type == "Crew" %}
                         <div class="col-lg-3 col-md-3 col-sm-6 credits">
-                            <img class="img-circle" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                            <img class="img-circle" src="/wp-content/tmdb_img/{{item.url}}"/>
                             <ul class="people">
                                 <li>{{item.name}}</li>
                                 <li>{% if tab.type == "Cast" %}Role:&nbsp;{% endif %}{{item.role}}</li>
@@ -86,7 +86,7 @@
                                 <li>Air date:&nbsp;{{item.airdate}}</li>
                                 <li>Episodes:&nbsp;{{item.episodes}}</li>
                             </ul>
-                            <img class="mmdb-poster" src="{{site.baseurl}}/wp-content/tmdb_img/{{item.url}}"/>
+                            <img class="mmdb-poster" src="/wp-content/tmdb_img/{{item.url}}"/>
                         </div>
                         {% endif %}
                         {% endfor %}

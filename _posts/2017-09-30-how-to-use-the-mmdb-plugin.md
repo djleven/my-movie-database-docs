@@ -7,7 +7,7 @@ layout: post
 guid: 127.0.0.1/?p=29
 permalink: /how-to-use-the-mmdb-plugin/
 ---
-<img class="alignright wp-image-322 size-thumbnail" src="{{site.baseurl}}/wp-content/uploads/2017/11/icon-256x256-white-150x150.png" alt="mmdb-logo" width="150" height="150" srcset="{{site.baseurl}}/wp-content/uploads/2017/11/icon-256x256-white-150x150.png 150w, {{site.baseurl}}/wp-content/uploads/2017/11/icon-256x256-white-100x100.png 100w, {{site.baseurl}}/wp-content/uploads/2017/11/icon-256x256-white.png 256w" sizes="(max-width: 150px) 100vw, 150px" />The My-Movie-Database (mmdb) plugin can be used via  [**shortcodes**](#shortcodes) or  inside [**wordpress posts**](#post_types) (and post types).
+<img class="alignright wp-image-322 size-thumbnail" src="/wp-content/uploads/2017/11/icon-256x256-white-150x150.png" alt="mmdb-logo" width="150" height="150" srcset="/wp-content/uploads/2017/11/icon-256x256-white-150x150.png 150w, /wp-content/uploads/2017/11/icon-256x256-white-100x100.png 100w, /wp-content/uploads/2017/11/icon-256x256-white.png 256w" sizes="(max-width: 150px) 100vw, 150px" />The My-Movie-Database (mmdb) plugin can be used via  [**shortcodes**](#shortcodes) or  inside [**wordpress posts**](#post_types) (and post types).
 
 After installing the plugin three custom post types are created in wordpress: Movies, TvShows and Persons.
 
@@ -35,13 +35,13 @@ _1-) Enter the title of the movie you are looking for and click on search._
 
 _2-) You will then be presented with the search results._
 
-<img class="size-full wp-image-306" src="{{site.baseurl}}/wp-content/uploads/2017/09/search.png" alt="search-results" width="982" height="827" srcset="{{site.baseurl}}/wp-content/uploads/2017/09/search.png 982w, {{site.baseurl}}/wp-content/uploads/2017/09/search-300x253.png 300w, {{site.baseurl}}/wp-content/uploads/2017/09/search-768x647.png 768w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" /> 
+<img class="size-full wp-image-306" src="/wp-content/uploads/2017/09/search.png" alt="search-results" width="982" height="827" srcset="/wp-content/uploads/2017/09/search.png 982w, /wp-content/uploads/2017/09/search-300x253.png 300w, /wp-content/uploads/2017/09/search-768x647.png 768w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" />
 
 _ _
 
 _3-) Click on the desired movie._ A pop up will appear asking you to confirm your selection or to return to the previous page.
 
-<img class="wp-image-305 size-large" src="{{site.baseurl}}/wp-content/uploads/2017/09/confirm-selection-1024x442.png" alt="confirm-selection" width="525" height="227" srcset="{{site.baseurl}}/wp-content/uploads/2017/09/confirm-selection-1024x442.png 1024w, {{site.baseurl}}/wp-content/uploads/2017/09/confirm-selection-300x129.png 300w, {{site.baseurl}}/wp-content/uploads/2017/09/confirm-selection-768x331.png 768w, {{site.baseurl}}/wp-content/uploads/2017/09/confirm-selection.png 1085w" sizes="(max-width: 525px) 100vw, 525px" /> 
+<img class="wp-image-305 size-large" src="/wp-content/uploads/2017/09/confirm-selection-1024x442.png" alt="confirm-selection" width="525" height="227" srcset="/wp-content/uploads/2017/09/confirm-selection-1024x442.png 1024w, /wp-content/uploads/2017/09/confirm-selection-300x129.png 300w, /wp-content/uploads/2017/09/confirm-selection-768x331.png 768w, /wp-content/uploads/2017/09/confirm-selection.png 1085w" sizes="(max-width: 525px) 100vw, 525px" /> 
 
 _4-) Once you have confirmed your selection click to save (or update) your post._
 
@@ -61,7 +61,7 @@ For the Movie posts only  (in the advanced configuration option tab) :
   * You have the option of using the default wordpress posts instead of a new custom post type.
   * You also have the option of renaming the default WP posts into movies or leaving them as is (&#8216;Posts&#8217;).
 
-See the [configuration documentation page]({{site.baseurl}}/plugin-configuration-mmdb-options-page/)  for more detailed info.
+See the [configuration documentation page](/plugin-configuration-mmdb-options-page/)  for more detailed info.
 
 > **All the of the above apply for TvShows and Persons as well.**
 

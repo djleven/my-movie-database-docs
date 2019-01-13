@@ -14,8 +14,8 @@ You can use it via shortcodes or the standard posts method.
 
 The data comes from [The Movie Database](https://www.themoviedb.org/) (TMDb), the leading crowdsourced movie industry information community. This plugin is in no way endorsed or supported by TMDb.
 
-* [Installation]({{site.baseurl}}/installation/)
-* [How to use the plugin]({{site.baseurl}}/how-to-use-the-mmdb-plugin/)
-* [Configuration]({{site.baseurl}}/plugin-configuration-mmdb-options-page/)
+* [Installation](/installation/)
+* [How to use the plugin](/how-to-use-the-mmdb-plugin/)
+* [Configuration](/plugin-configuration-mmdb-options-page/)
 
 {% include TMDB/StarTrekTNG.html %}
