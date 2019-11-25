@@ -1,6 +1,4 @@
-<img class="aligncenter wp-image-104 size-full" src="/wp-content/uploads/2017/09/mmdb_adv_options.png" alt="" width="1055" height="803" srcset="/wp-content/uploads/2017/09/mmdb_adv_options.png 1055w, /wp-content/uploads/2017/09/mmdb_adv_options-300x228.png 300w, /wp-content/uploads/2017/09/mmdb_adv_options-768x585.png 768w, /wp-content/uploads/2017/09/mmdb_adv_options-1024x779.png 1024w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" />
-
-
+<img class="aligncenter wp-image-104 size-full" src="/wp-content/uploads/2017/09/mmdb_adv_options.png" alt="mmdb_adv_options img" />
 <div id="accordion2" class="panel-group config">
 
     <div id="accordion-adv" class="panel-group adv">
@@ -101,7 +99,7 @@
 
             <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Default templates require the default mmdb css file. Select when to load it.<br />
+                    <p>Default templates require the default mmdb css file. Select when to load it.</p>
 
                     <ul>
                         <li>
@@ -136,7 +134,7 @@
 
             <div id="collapse5" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Default templates require bootstrap libraries.Select when to load bootstrap.<br />
+                    <p>Default templates require bootstrap libraries. Select when to load bootstrap.</p>
 
                     <ul>
                         <li>
@@ -165,16 +163,69 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="#collapse6" data-toggle="collapse" data-parent="#accordion-adv">Debug Mode </a>
+                    <a href="#collapse6" data-toggle="collapse" data-parent="#accordion-adv">WP Categories</a>
                 </h4>
             </div>
 
             <div id="collapse6" class="panel-collapse collapse">
                 <div class="panel-body">
-                    This will simply output the call to TMDB used for troubleshooting. You can then click on the "see request" link that will appear at the top of the page to see the data that TMDb is sending for the requested ressource.
+
+                    <p>You now have the option to link your my movie database posts to WP categories </p>
+
+                    <ul>
+                        <li>
+                            Yes, allow movies, tvshows and persons to be associated to wordpress categories.
+                        </li>
+                        <br /> The default option. This will allow you to associate regular wordpress categories to movies, tvshows and persons.
+                    </ul>
+
+                    <ul>
+                        <li>
+                            Yes, associate them but do not show mmdb type posts in wordpress category pages as it conflicts with my theme or plugins, but load it for all WP pages.
+                        </li>
+                        <br /> Allow you to associate mmdb type posts to WP categories but do not display them in wordpress category (archive) pages.
+                    </ul>
+
+                    <ul>
+                        <li>
+                            No, do not use wordpress categories
+                        </li>
+                        <br /> Selecting 'No' will not allow you to associate mmdb type posts to WP categories.
+                    </ul>
                 </div>
             </div>
         </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapse7" data-toggle="collapse" data-parent="#accordion-adv">Overview on hover</a>
+                </h4>
+            </div>
+
+            <div id="collapse7" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Select whether you wish to show the text description on hover (and click on mobile) for person credits and tvshow seasons sections.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapse8" data-toggle="collapse" data-parent="#accordion-adv">Debug Mode </a>
+                </h4>
+            </div>
+
+            <div id="collapse8" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Selecting ON will output the data received from TMDB in your browser's (web developer tools) console for troubleshooting purposes.
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
